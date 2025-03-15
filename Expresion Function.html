@@ -4,10 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        color: rgb(67, 153, 89);
+        font-size: larger;
+      }
+      h1 {
+        box-shadow: 2px 3px 10px rgb(255, 81, 0);
+      }
+      h3 {
+        text-shadow: 5px 4px 13px blue;
+        color: rgb(47, 146, 100);
+        font-size: 30px;
+      }
+    </style>
   </head>
   <body style="text-align: center">
-    <h1 style="color: chartreuse">Codingal Education</h1>
-    <h3>Function Declaration</h3>
+    <h1 style="color: rgb(255, 0, 0)">Codingal Education</h1>
+    <h3>Function Declaration(+,x,-,÷)</h3>
     <script>
       function add(a, b) {
         return a + b;
@@ -18,10 +33,13 @@
       };
       //Arrow Function
       var div = (a, b) => a / b;
+      //Subtraction Function
+      var sub = (a, b) => a - b;
 
-      document.write(`Regular Function: ${add(8, 10)} <br>`);
-      document.write(`Expression Function: ${mult(5, 10)} <br>`);
-      document.write(`Arrow Function :${div(6500, 10)}`);
+      document.write(`Regular Function(+): ${add(8, 10)} <br><br>`);
+      document.write(`Expression Function(x): ${mult(5, 10)}<br> <br>`);
+      document.write(`Arrow Function(÷): ${div(6500, 10)}<br><br>`);
+      document.write(`Subtraction Function(-):${sub(80, 10)}`);
     </script>
   </body>
 </html>
